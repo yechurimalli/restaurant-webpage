@@ -1,0 +1,45 @@
+.dish {
+    display:grid;
+    grid-template-columns:repeat(3fr);
+    align-items:center;
+    padding:40px;
+    border:2px;
+    border-color:black
+}
+.dish-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Horizontal spacing */
+    width: 100%; /* Ensure full width */
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.dish {
+    width: 30%; /* Ensure 3 items fit side-by-side */
+    margin: 10px;
+    box-sizing: border-box; /* Include padding in width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.img {
+    position: relative;
+}
+
+.img img {
+    width: 100%; /* Let the image span the full container */
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.tit {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+h4 {
+    margin: 10px 0;
+}
+
